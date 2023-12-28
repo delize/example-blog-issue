@@ -1,0 +1,6 @@
+github.com/CaiJimmy/hugo-theme-stack/v3 v3.21.0 h1:GT519sWiMhJCYO2xkxgjTvgGZsfP31Q79OURWGTT8/Y=
+github.com/CaiJimmy/hugo-theme-stack/v3 v3.21.0/go.mod h1:IPmCXiIxlFSLFYS0tOmYP6ySLviyeNVSabyvSuaxD+I=
+github.com/gurusabarish/hugo-profile v0.0.0-20231224104236-d49ebeb82b16 h1:iPDUEvMQygG8tCS+XptG7Ll8wK9Cvk+Zro7O11EQfxY=
+github.com/gurusabarish/hugo-profile v0.0.0-20231224104236-d49ebeb82b16/go.mod h1:drpVx8hmKaH1c5qiGjGFQ6FU+I1C6ygS/U7AB5nMH44=
+github.com/martignoni/hugo-notice v0.0.0-20230829114050-2d7d7460bc60 h1:cPU84OKIQJMEfuvgbAem94J5YDn3UBDrth17VM9I0QA=
+github.com/martignoni/hugo-notice v0.0.0-20230829114050-2d7d7460bc60/go.mod h1:MIQPOMgEcbyRC0gNLzQFSgrS+wIy3RuQ/HbaZYtTOKU=

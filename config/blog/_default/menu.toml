@@ -1,0 +1,28 @@
+# Configure main menu and social menu
+[[social]]
+identifier = "home"
+name = "Portfolio"
+url = "https://MyNameMyLastName.org/"
+weight = "-120"
+
+[social.params]
+icon = "home"
+newtab = true
+
+[[social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/delize"
+weight = "-100"
+
+[social.params]
+icon = "brand-github"
+
+[[social]]
+identifier = "linkedin"
+name = "LinkedIn"
+url = "https://linkedin.com/in/MyNameMyLastName"
+weight = "-110"
+
+[social.params]
+icon = "brand-linkedin-light"

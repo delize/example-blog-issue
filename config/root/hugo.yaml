@@ -1,0 +1,375 @@
+baseURL: "https://MyNameMyLastName.org/"
+languageCode: "en-us"
+title: "myname"
+# theme: [ "hugo-profile"]
+
+module:
+  imports:
+    - path: github.com/martignoni/hugo-notice
+    - path: github.com/gurusabarish/hugo-profile
+
+
+outputs:
+  home:
+    - "HTML"
+    # - "RSS"
+    # - "JSON"
+  # page:
+  #   - "HTML"
+  #   - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+disqusShortname: MyNameMyLastName-org
+googleAnalytics: GoogleAnalyticsID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  header:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blog
+      weight: 1
+    - identifier: photos
+      name: Photos
+      title: 
+      url: /photos
+      weight: 2
+
+
+params:
+  title: "myname"
+  description: A brief summary of myself, experience, projects, and musings from my blog can be found here.
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/favicon.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+  
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "myname" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: true
+      
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hey, my name is"
+    title: "MyName!"
+    subtitle: "I come up with creative & progressive solutions"
+    content: "A passionate and curious TechOps Engineer, AI & Tech Enthusiast, Photographer, and Snowboarder. Finding future forward ways to solve complex problems, which feels great!"
+    image: "images/headshot_2023.jpg"
+    bottomImage:
+      enable: true
+      roundImage: false # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "file/MyName_MyLastName_Online_Resume_2020_TB.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/delize
+        - icon: fab fa-linkedin-in
+          url: https://linkedin.com/in/MyNameMyLastName
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "images/DSC01107-EDIT.jpg"
+    content: |-
+      I am a Systems & Technical Operations Engineer, originally from the USA, though currently reside in Sweden. 
+
+      I have a strong passion for snowboarding, photography, music, visually stimulating art, and traveling (and getting lost or having side-quests on the way). I also have a strong interest in science based subjects, ranging from Biology to Engineering.
+
+      While a large portion of my current position involves Client Endpoint Management and IAM Management in Operations, I have recently taken an interest in ChatGPT, server-less infrastructure, and DevOps/SRE type workflows. 
+    skills:
+      enable: true
+      title: "Recently, I've advanced my expertise in various technologies & skills, including"
+      items:
+        - "ChatGPT"
+        - "Docker"
+        - "Leadership"
+        - "Mentoring / Teaching"
+        - "Okta / IAM"
+        - "Terraform"
+        - "ZSH"
+        - "No/Low Code Automations"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "My Title"
+        company: "Fake Data 1"
+        companyUrl: "https://fake.com/"
+        date: "November 2022 - Present"
+        featuredLink:
+          enable: true
+          name: "OIE Concepts"
+          url: "https://MyNameMyLastName.org/blog/"
+        content: |-
+            
+            Jumped right in to 
+
+            - Lead 
+            - Pioneered 
+            - Conducted 
+
+      - job: "My Title"
+        company: "Fake Data 2"
+        companyUrl: "https://www.fake.com/"
+        date: "March 2000 - November 2000"
+        featuredLink:
+          enable: true
+          name: "Automation"
+          url: "https://MyNameMyLastName.org/blog//"
+        info:
+          enable: false
+          content: I worked as an (Senior) IT Engineer for more than one year at Epidemic Sound.
+        content: |-
+            
+            Jumped right in to 
+
+            - Lead 
+            - Pioneered 
+            - Conducted 
+
+
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Fake Data"
+        school:
+          name: "Some School"
+          url: "https://www.fake.edu/"
+        date: "2009 - 2012"
+        # GPA: "3.8 out of 5.0"
+        content: |-
+          
+          Took courses focused on:
+
+
+
+      - title: "Fake Data" 
+        school: 
+          name: "Fake Data"
+          url: "https://www.fake.edu/"
+        content: |- 
+          Degree courses were focused on: 
+
+        date: "2009 - 2012"
+        # GPA: "4.2 out of 5.0"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Blog Recognition
+        content: '"Hey man, just wanted to say a huge thank you I used your expensify Okta Workflows guide from your blog and it saved my team so. much. time. I do not think I was going to figure that one out on my own."   - Daniel Thompson, Sr. Systems Engineer:Idp/IAM, AD.Visory Solutions'
+        image: images/daniel_thompson.jpg
+      - title: Cisco's Acquisition of ThousandEyes
+        content:  Thank you MyName! You played a critical role in Cisco's first ever all-virtual laptop retention program of an acquired company during a pandemic. Your help in building and running the necessary Mac scripts to remove all TE management software, AV, etc., Along with pushing the Mac scripts for all the necessary Cisco software. ... Thank you so much! - Dave Chan, Integration Lead at Cisco
+        image: images/dave-chan.jpg
+      - title: ThousandEyes Acknowledgement
+        content: "Timing couldn't be worse for our IT team during the transition to Cisco. I as the leader of the ThousandEyes IT Team went on paternity leave right in the middle of the most crucial time during the transition. MyName stepped up the plate to take over the leadership void that was left. I am proud to have this individual on my team who has really help(ed) build an amazing IT (team) that has enabled the ThousandEyes to reach many milestones including the M&A with Cisco. Thank you! - Steven Garcia, IT Manager, ThousandEyes" 
+        image: images/steven-garcia.jpg
+      - title: Guest Speaker
+        content: Rethink Active Directory, User Group Session - hosted by Okta. Guest speaker for ~50 professionals (ranging from Entry to C-Level title) in various industries (Public, Private, and Governmental) regarding the transition off of our Active Directory environment to using Okta as our main profile source and the planned deprecation of Active Directory at ThousandEyes.
+        url:
+        # image: images/okta_aura_black.png
+      - title: Okta Certified Professional
+        content: Certified on April 2021, expired April 2023.
+        # image: images/okta_aura_black.png
+        url: https://www.credly.com/badges/490cc294-77e8-4a82-b05b-06d9adb7314d
+
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Snipe-IT & CDW Automation
+        content: Automate B2B supplier interactions with this script; Connect to suppliers like CDW, retrieves, and processes asset and purchase data for seamless integration into Snipe-IT.
+        image: images/snipe-it-logo500x500.png
+        featured:
+          name: Repo
+          link: https://github.com/delize/snipeit_cdw_automation
+        badges:
+          - "Python"
+          - "Docker"
+          - "Snipe-IT"
+        links:
+          # - icon: fa fa-envelope
+          #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/delize/snipeit_cdw_automation
+          # - icon: fab fa-twitter
+          #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: AD2Okta
+        content: Effortlessly migrate from Active Directory to Okta Classic with this Python script. Access the repository on GitHub or explore further in the blog post below.
+        image: /images/dalle_generated-ad2okta.png
+        featured:
+          name: Blog
+          link: https://MyNameMyLastName.org/blog/2020/transitioning-to-okta-from-active-directory-new-directory-service-infrastructure/
+        badges:
+          - "Active Directory"
+          - "Okta"
+          - "Python"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/delize/ad_to_okta
+
+      - title: Okta Device Trust
+        content: Configured Okta Device Trust for ~6000 devices.
+        image: images/okta_aura_black.png
+        featured:
+          name: Blog
+          link: https://MyNameMyLastName.org/blog/2023/oie-fastpass-devicetrust-deployment/
+        badges:
+          - "IAM"
+          - "Okta"
+          - "Compliance"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: false
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    email: gurusabarisha@gmail.com
+    btnName: Mail me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blog"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: true
+    socialNetworks:
+      github: https://github.com/delize
+      linkedin: https://linkedin.com/in/MyNameMyLastName
+      instagram: https://instagram.com/adoers.photos
+
+  # List pages like blogs and posts
+  listPages:
+    enable: false
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: false
+      content: "min read"
+    scrollprogress:
+      enable: false
+
+  # # For translations
+  # terms:
+  #   read: "Read"
+  #   toc: "Table Of Contents"
+  #   copyright: "All rights reserved"
+  #   pageNotFound: "Page not found"
+  #   emailText: "Check out this site"
+
+  # datesFormat:
+  #   article: "Jan 2, 2006"
+  #   articleList: "Jan 2, 2006"
+  #   articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
+
+
+# module:
+#   mounts:
+#   - source: ./../blog/content/blog/post
+#     target: content/blog/
+
+permalinks:
+  page:
+    blog: /blog/:year/:slug/

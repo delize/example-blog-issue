@@ -1,0 +1,8 @@
+# Rename this file to languages.toml to enable multilingual support
+[en]
+languageName = "English"
+languagedirection = "ltr"
+title = "MyName's Blog"
+weight = 1
+[params]
+description = "Musings of Technical Operations, Research, Photography, Travel Blogging, other things that cross my mind. When I have time to write."
