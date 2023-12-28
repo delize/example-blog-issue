@@ -117,8 +117,8 @@ params:
     intro: "Hey, my name is"
     title: "MyName!"
     subtitle: "I come up with creative & progressive solutions"
-    content: "A passionate and curious TechOps Engineer, AI & Tech Enthusiast, Photographer, and Snowboarder. Finding future forward ways to solve complex problems, which feels great!"
-    image: "images/headshot_2023.jpg"
+    content: "A passionate and curious!"
+    image: "images/avatar.png"
     bottomImage:
       enable: true
       roundImage: false # Make hero image circular | default false
@@ -142,25 +142,21 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "images/DSC01107-EDIT.jpg"
+    image: "images/fake-EDIT.jpg"
     content: |-
-      I am a Systems & Technical Operations Engineer, originally from the USA, though currently reside in Sweden. 
-
-      I have a strong passion for snowboarding, photography, music, visually stimulating art, and traveling (and getting lost or having side-quests on the way). I also have a strong interest in science based subjects, ranging from Biology to Engineering.
-
-      While a large portion of my current position involves Client Endpoint Management and IAM Management in Operations, I have recently taken an interest in ChatGPT, server-less infrastructure, and DevOps/SRE type workflows. 
+       Fake text here
     skills:
       enable: true
       title: "Recently, I've advanced my expertise in various technologies & skills, including"
       items:
-        - "ChatGPT"
-        - "Docker"
-        - "Leadership"
-        - "Mentoring / Teaching"
-        - "Okta / IAM"
-        - "Terraform"
-        - "ZSH"
-        - "No/Low Code Automations"
+        - "Fake"
+        - "fake"
+        - "fake"
+        - "fake"
+        - "5"
+        - "6"
+        - "7"
+        - "8"
 
   # Experience
   experience:
@@ -173,7 +169,7 @@ params:
         date: "November 2022 - Present"
         featuredLink:
           enable: true
-          name: "OIE Concepts"
+          name: " Concepts"
           url: "https://MyNameMyLastName.org/blog/"
         content: |-
             
@@ -193,7 +189,7 @@ params:
           url: "https://MyNameMyLastName.org/blog//"
         info:
           enable: false
-          content: I worked as an (Senior) IT Engineer for more than one year at Epidemic Sound.
+          content: I worked as an 
         content: |-
             
             Jumped right in to 
@@ -236,79 +232,11 @@ params:
           url: "https://example.com"
 
   # Achievements
-  achievements:
-    enable: true
-    # title: "Custom Name"
-    items:
-      - title: Blog Recognition
-        content: '"Hey man, just wanted to say a huge thank you I used your expensify Okta Workflows guide from your blog and it saved my team so. much. time. I do not think I was going to figure that one out on my own."   - Daniel Thompson, Sr. Systems Engineer:Idp/IAM, AD.Visory Solutions'
-        image: images/daniel_thompson.jpg
-      - title: Cisco's Acquisition of ThousandEyes
-        content:  Thank you MyName! You played a critical role in Cisco's first ever all-virtual laptop retention program of an acquired company during a pandemic. Your help in building and running the necessary Mac scripts to remove all TE management software, AV, etc., Along with pushing the Mac scripts for all the necessary Cisco software. ... Thank you so much! - Dave Chan, Integration Lead at Cisco
-        image: images/dave-chan.jpg
-      - title: ThousandEyes Acknowledgement
-        content: "Timing couldn't be worse for our IT team during the transition to Cisco. I as the leader of the ThousandEyes IT Team went on paternity leave right in the middle of the most crucial time during the transition. MyName stepped up the plate to take over the leadership void that was left. I am proud to have this individual on my team who has really help(ed) build an amazing IT (team) that has enabled the ThousandEyes to reach many milestones including the M&A with Cisco. Thank you! - Steven Garcia, IT Manager, ThousandEyes" 
-        image: images/steven-garcia.jpg
-      - title: Guest Speaker
-        content: Rethink Active Directory, User Group Session - hosted by Okta. Guest speaker for ~50 professionals (ranging from Entry to C-Level title) in various industries (Public, Private, and Governmental) regarding the transition off of our Active Directory environment to using Okta as our main profile source and the planned deprecation of Active Directory at ThousandEyes.
-        url:
-        # image: images/okta_aura_black.png
-      - title: Okta Certified Professional
-        content: Certified on April 2021, expired April 2023.
-        # image: images/okta_aura_black.png
-        url: https://www.credly.com/badges/490cc294-77e8-4a82-b05b-06d9adb7314d
+
 
 
   # projects
-  projects:
-    enable: true
-    # title: "Custom Name"
-    items:
-      - title: Snipe-IT & CDW Automation
-        content: Automate B2B supplier interactions with this script; Connect to suppliers like CDW, retrieves, and processes asset and purchase data for seamless integration into Snipe-IT.
-        image: images/snipe-it-logo500x500.png
-        featured:
-          name: Repo
-          link: https://github.com/delize/snipeit_cdw_automation
-        badges:
-          - "Python"
-          - "Docker"
-          - "Snipe-IT"
-        links:
-          # - icon: fa fa-envelope
-          #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/delize/snipeit_cdw_automation
-          # - icon: fab fa-twitter
-          #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-      - title: AD2Okta
-        content: Effortlessly migrate from Active Directory to Okta Classic with this Python script. Access the repository on GitHub or explore further in the blog post below.
-        image: /images/dalle_generated-ad2okta.png
-        featured:
-          name: Blog
-          link: https://MyNameMyLastName.org/blog/2020/transitioning-to-okta-from-active-directory-new-directory-service-infrastructure/
-        badges:
-          - "Active Directory"
-          - "Okta"
-          - "Python"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/delize/ad_to_okta
-
-      - title: Okta Device Trust
-        content: Configured Okta Device Trust for ~6000 devices.
-        image: images/okta_aura_black.png
-        featured:
-          name: Blog
-          link: https://MyNameMyLastName.org/blog/2023/oie-fastpass-devicetrust-deployment/
-        badges:
-          - "IAM"
-          - "Okta"
-          - "Compliance"
-        # links:
-        #   - icon: fab fa-github
-        #     url: https://github.com/gurusabarish/HugoProfileV2
 
   #Contact
   contact:
@@ -333,7 +261,7 @@ params:
     socialNetworks:
       github: https://github.com/delize
       linkedin: https://linkedin.com/in/MyNameMyLastName
-      instagram: https://instagram.com/adoers.photos
+      instagram: https://instagram.com/
 
   # List pages like blogs and posts
   listPages:
