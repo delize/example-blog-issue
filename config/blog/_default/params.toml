@@ -21,7 +21,7 @@ subtitle = "some description here."
 [sidebar.avatar]
 enabled = true
 local = true
-src = "img/fake.png"
+src = "img/file.png"
 
 [article]
 math = false
